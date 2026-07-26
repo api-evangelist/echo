@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.echo.ai/
+url: https://trust.echo.ai/
+description: >-
+  Echo's public Trust Center (trust.echo.ai). Echo publishes named certifications
+  and downloadable assurance reports. Enriched from the live trust center over the
+  automated probe hit.
+certifications:
+- {name: SOC 2 Type 2, availability: report available via trust center}
+- {name: ISO/IEC 27001:2022, availability: report available via trust center}
+- {name: FIPS 140-3}
+reports:
+- SOC 2 Report
+- ISO Report
+- Penetration Test Report
+policies:
+- Backup Policy
+- Software Development Lifecycle Policy
+- Business Continuity / Disaster Recovery Policy
+subprocessors: listed on trust center
+evidence:
+- source: https://trust.echo.ai/
+  keywords:
+  - soc 2 type 2
+  - iso/iec 27001:2022
+  - fips 140-3
+  - trust center
+  - penetration test report

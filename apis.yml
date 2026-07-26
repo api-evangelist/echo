@@ -1,7 +1,27 @@
 aid: echo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/echo.png
 name: Echo
-description: 'Echo is a company surfaced as a portfolio company of ggv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Echo is a software supply-chain security company that delivers vulnerability-free
+  (CVE-free), secure-by-design base container images, language libraries, hardened
+  virtual machines, serverless runtimes, and OS packages. Its artifacts are built as
+  drop-in replacements so engineering teams eliminate known CVEs across their software
+  supply chain without changing application code, cutting remediation toil and easing
+  compliance with frameworks like FedRAMP, FIPS, PCI DSS, DORA, and the EU Cyber
+  Resilience Act. Echo operates as a CVE Numbering Authority (CNA) and publishes a
+  Trust Center with SOC 2 Type 2, ISO/IEC 27001:2022, and FIPS 140-3 assurance. The
+  company is backed by GGV Capital.
 url: https://raw.githubusercontent.com/api-evangelist/echo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Ai
+- Security
+- Supply Chain Security
+- Container Security
+- Vulnerability Management
+- DevSecOps
+- Compliance
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/echo-trust-center.yml
+- type: Compliance
+  url: https://trust.echo.ai/
+- type: VulnerabilityDisclosure
+  url: security/echo-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.echo.ai/vulnerability-disclosure
+- type: DomainSecurity
+  url: security/echo-domain-security.yml
+- type: Blog
+  url: https://www.echo.ai/blog
+- type: Pricing
+  url: https://www.echo.ai/pricing
+- type: Login
+  url: https://app.echohq.com/sign-in
+- type: TermsOfService
+  url: https://www.echo.ai/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.echo.ai/legal/privacy-policy
 - type: Website
   url: https://www.echo.ai/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
