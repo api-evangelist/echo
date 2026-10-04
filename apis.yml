@@ -51,7 +51,7 @@ tags:
 - Vulnerability Management
 - DevSecOps
 - Compliance
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Security
@@ -61,6 +61,7 @@ tags_raw:
 - DevSecOps
 - Compliance
 - Open Source
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
